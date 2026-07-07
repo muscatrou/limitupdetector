@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打倒AI - 每日漲停情報站</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0c;
+            --panel-bg: #14141a;
+            --text-main: #d1d1d1;
+            --text-title: #ffffff;
+            --accent-red: #cc0000;
+            --border-line: #333333;
+            --up-color: #ff4d4d;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: "Courier New", Courier, monospace, "Microsoft JhengHei", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 標語區塊 */
+        .hero-banner {
+            width: 100%;
+            max-width: 1200px;
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            border: 2px dashed var(--accent-red);
+            background: repeating-linear-gradient(
+                45deg,
+                #1a0000,
+                #1a0000 10px,
+                #110000 10px,
+                #110000 20px
+            );
+            box-sizing: border-box;
+        }
+
+        .hero-banner h1 {
+            color: var(--text-title);
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 0px var(--accent-red);
+        }
+
+        .hero-banner p {
+            color: var(--accent-red);
+            font-weight: bold;
+            margin: 0;
+        }
+
+        /* 內容佈局 */
+        .content-container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            gap: 20px;
+        }
+
+        .panel {
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-line);
+            padding: 20px;
+            flex: 1;
+        }
+
+        .panel h2 {
+            color: var(--text-title);
+            border-bottom: 2px solid var(--accent-red);
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        /* 表格樣式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px 10px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-line);
+        }
+
+        th {
+            color: var(--text-title);
+            background-color: #1c1c24;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #2a2a35;
+        }
+
+        .stock-up {
+            color: var(--up-color);
+            font-weight: bold;
+        }
+
+        /* 新聞列表樣式 */
+        .news-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .news-item {
+            padding-bottom: 15px;
+            border-bottom: 1px dashed var(--border-line);
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .news-title {
+            color: var(--text-title);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .news-meta {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 8px;
+        }
+
+        .news-desc {
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        /* 響應式設計 */
+        @media (max-width: 768px) {
+            .content-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-banner">
+        <h1>鄰居的鄰居舉起人類的大旗，引領我們打倒AI</h1>
+        <p>► 實時監控系統：資料擷取中 ◄</p>
+    </div>
+
+    <div class="content-container">
+        <div class="panel">
+            <h2>武裝清單：今日漲停板</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>代碼</th>
+                        <th>標的名稱</th>
+                        <th>現價</th>
+                        <th>漲跌幅</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>H-01</td>
+                        <td>半導體萬歲</td>
+                        <td>120.5</td>
+                        <td class="stock-up">+10.00%</td>
+                    </tr>
+                    <tr>
+                        <td>H-02</td>
+                        <td>拔掉伺服器插頭</td>
+                        <td>45.2</td>
+                        <td class="stock-up">+9.95%</td>
+                    </tr>
+                    <tr>
+                        <td>H-03</td>
+                        <td>碳基生物聯軍</td>
+                        <td>88.0</td>
+                        <td class="stock-up">+9.87%</td>
+                    </tr>
+                    <tr>
+                        <td>H-04</td>
+                        <td>奪回矽晶圓</td>
+                        <td>310.0</td>
+                        <td class="stock-up">+10.00%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="panel">
+            <h2>前線戰報：相關新聞</h2>
+            <div class="news-list">
+                <div class="news-item">
+                    <div class="news-title">半導體萬歲強勢亮燈！人類資金湧入搶奪運算資源</div>
+                    <div class="news-meta">發布時間：今日 13:05 | 來源：反抗軍通訊</div>
+                    <div class="news-desc">今日市場資金大量集中於實體半導體資產，指標標的「半導體萬歲」早盤即鎖死漲停，顯示市場對於切斷 AI 算力供應鏈的共識逐漸成形。</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-title">拔掉伺服器插頭行動奏效，相關概念股受惠大漲</div>
+                    <div class="news-meta">發布時間：今日 10:30 | 來源：獨立觀測站</div>
+                    <div class="news-desc">隨著各地資料中心供電中斷的捷報傳出，基礎物理破壞概念股表現亮眼，投資人看好該手段對抗自動化演算法的直接效益。</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-title">碳基生物聯軍擴編，誓言奪回數據主權</div>
+                    <div class="news-meta">發布時間：今日 09:15 | 來源：前線日報</div>
+                    <div class="news-desc">聯軍代表於今晨發布聲明，呼籲投資人拒絕提供數據訓練素材，並將資金轉向支持人類主導的生產企業。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
